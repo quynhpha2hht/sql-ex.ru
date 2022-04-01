@@ -7,7 +7,7 @@ with tb1 as (
 	from printer
 	where price = (select min(price) from printer where color = 'y')
 	and color = 'y'
-/*	
+	/*
 	intersect 
 	
 	select model, price
